@@ -1,4 +1,5 @@
 # Demo LittleFS Example
+This demo is intended to help you get a feel for the working of littlefs using the esp_littlefs wrapper.
 
 Prints "Demo LittleFs". then procedes to print some
 Chip, Flash and Heap info, then we get to the actual
@@ -7,6 +8,24 @@ demo of the LittleFs library.
 (See the README.md file in the upper level 'examples' directory for more information about examples.)
 
 ## How to use example
+
+Open your projects folder, and then clone this demo in.
+
+```
+git clone https://github.com/wreyford/demo_esp_littlefs.git
+```
+Make a folder components folder in the root of your demo_esp_littlefs folder created by the clone.
+Make sure you open this folder in the terminal, then follow the instructions below specific to the 
+esp_littlefs repository.
+
+In your project, add this as a submodule to your `components/` directory.
+
+```
+git submodule add https://github.com/joltwallet/esp_littlefs.git
+git submodule update --init --recursive
+```
+
+The library can be configured via `make menuconfig` under `Component config->LittleFS`.
 
 Follow detailed instructions provided specifically for this example. 
 
